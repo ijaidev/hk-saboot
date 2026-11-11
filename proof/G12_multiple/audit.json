@@ -1,0 +1,662 @@
+{
+  "audit_version": "0.1.0",
+  "engine": "deterministic-v1",
+  "generated_at": "2026-11-09T17:50:04.674271+00:00",
+  "statement": {
+    "meta": {
+      "statement_id": "ST-G12_multiple",
+      "platform": "QuickDrop",
+      "worker_id": "W-1042",
+      "period_start": "2026-10-01T00:00:00+05:30",
+      "period_end": "2026-10-31T23:59:59+05:30",
+      "currency": "INR",
+      "jurisdiction": "IN-KA"
+    },
+    "counts": {
+      "orders": 5,
+      "earnings": 4,
+      "deductions": 3,
+      "incentives": 1
+    },
+    "warnings": [],
+    "orders": [
+      {
+        "order_id": "QD-12001",
+        "accepted_at": "2026-10-01T18:00:00+05:30",
+        "picked_up_at": "2026-10-01T18:12:00+05:30",
+        "delivered_at": "2026-10-01T18:25:00+05:30",
+        "promised_delivery_at": "2026-10-01T18:40:00+05:30",
+        "restaurant_prep_minutes": 12,
+        "distance_km": 3.0,
+        "status": "delivered",
+        "base_pay": 42.0,
+        "surge_pay": 0.0,
+        "tip": 0.0,
+        "total_pay": 42.0,
+        "expected_pay": 42.0
+      },
+      {
+        "order_id": "QD-12002",
+        "accepted_at": "2026-10-02T18:00:00+05:30",
+        "picked_up_at": "2026-10-02T18:29:00+05:30",
+        "delivered_at": "2026-10-02T18:42:00+05:30",
+        "promised_delivery_at": "2026-10-02T18:40:00+05:30",
+        "restaurant_prep_minutes": 29,
+        "distance_km": 3.0,
+        "status": "delivered",
+        "base_pay": 200.0,
+        "surge_pay": 0.0,
+        "tip": 0.0,
+        "total_pay": 200.0,
+        "expected_pay": 200.0
+      },
+      {
+        "order_id": "QD-12003",
+        "accepted_at": "2026-10-03T18:00:00+05:30",
+        "picked_up_at": "2026-10-03T18:12:00+05:30",
+        "delivered_at": "2026-10-03T18:25:00+05:30",
+        "promised_delivery_at": "2026-10-03T18:40:00+05:30",
+        "restaurant_prep_minutes": 12,
+        "distance_km": 3.0,
+        "status": "delivered",
+        "base_pay": 42.0,
+        "surge_pay": 0.0,
+        "tip": 0.0,
+        "total_pay": 42.0,
+        "expected_pay": 42.0
+      },
+      {
+        "order_id": "QD-12004",
+        "accepted_at": "2026-10-03T18:00:00+05:30",
+        "picked_up_at": "2026-10-03T18:10:00+05:30",
+        "delivered_at": "2026-10-03T18:23:00+05:30",
+        "promised_delivery_at": "2026-10-03T18:40:00+05:30",
+        "restaurant_prep_minutes": 10,
+        "distance_km": 3.0,
+        "status": "delivered",
+        "base_pay": 100.0,
+        "surge_pay": 0.0,
+        "tip": 0.0,
+        "total_pay": 100.0,
+        "expected_pay": 100.0
+      },
+      {
+        "order_id": "QD-12005",
+        "accepted_at": "2026-10-03T18:00:00+05:30",
+        "picked_up_at": "2026-10-03T18:10:00+05:30",
+        "delivered_at": "2026-10-03T18:23:00+05:30",
+        "promised_delivery_at": "2026-10-03T18:40:00+05:30",
+        "restaurant_prep_minutes": 10,
+        "distance_km": 3.0,
+        "status": "delivered",
+        "base_pay": 100.0,
+        "surge_pay": 0.0,
+        "tip": 0.0,
+        "total_pay": 100.0,
+        "expected_pay": 100.0
+      }
+    ],
+    "earnings": [
+      {
+        "earning_id": "E-0001",
+        "order_id": "QD-12001",
+        "earning_type": "base",
+        "amount": 42.0,
+        "description": "Base pay"
+      },
+      {
+        "earning_id": "E-0002",
+        "order_id": "QD-12002",
+        "earning_type": "base",
+        "amount": 200.0,
+        "description": "Base pay"
+      },
+      {
+        "earning_id": "E-0003",
+        "order_id": "QD-12004",
+        "earning_type": "base",
+        "amount": 100.0,
+        "description": "Base pay"
+      },
+      {
+        "earning_id": "E-0004",
+        "order_id": "QD-12005",
+        "earning_type": "base",
+        "amount": 100.0,
+        "description": "Base pay"
+      }
+    ],
+    "deductions": [
+      {
+        "deduction_id": "D-0001",
+        "order_id": "QD-12001",
+        "deduction_code": "LATE",
+        "description": "Late delivery penalty",
+        "amount": 75.0,
+        "applied_at": "2026-10-01T19:10:00+05:30"
+      },
+      {
+        "deduction_id": "D-0002",
+        "order_id": "QD-12001",
+        "deduction_code": "LATE",
+        "description": "Late delivery penalty",
+        "amount": 75.0,
+        "applied_at": "2026-10-01T19:14:00+05:30"
+      },
+      {
+        "deduction_id": "D-0003",
+        "order_id": "QD-12002",
+        "deduction_code": "LATE",
+        "description": "Late delivery penalty",
+        "amount": 50.0,
+        "applied_at": "2026-10-02T19:10:00+05:30"
+      }
+    ],
+    "incentives": [
+      {
+        "incentive_id": "INC-0001",
+        "name": "5-order streak",
+        "target_orders": 5,
+        "target_amount": 0.0,
+        "achieved_orders": 5,
+        "amount_promised": 500.0,
+        "amount_paid": 450.0,
+        "qualifying_order_ids": []
+      }
+    ]
+  },
+  "policy": {
+    "id": "quickdrop-policy-2026.1",
+    "version": "2026.1",
+    "platform": "QuickDrop",
+    "jurisdiction": "IN-KA",
+    "currency": "INR",
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "synthetic": true,
+    "disclaimer": "Fictional policy for the Saboot demo. QuickDrop is not a real platform. The clauses are modeled on publicly discussed platform-policy patterns but are not legal advice.",
+    "clauses": [
+      {
+        "id": "QD-DED-001",
+        "code": "*",
+        "title": "One deduction per order and reason",
+        "text": "QuickDrop will not apply the same deduction code to the same order more than once. If a duplicate is applied, the later charge must be reversed.",
+        "source_url": "https://quickdrop.example/policy/deductions#QD-DED-001",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "duplicate_deduction"
+        ],
+        "remedy": "Reverse the duplicate charge.",
+        "cap_rule": null
+      },
+      {
+        "id": "QD-DED-002",
+        "code": "LATE",
+        "title": "Late-delivery penalty cap",
+        "text": "A late-delivery penalty may not exceed the greater of INR 100 or 25% of the order's total pay.",
+        "source_url": "https://quickdrop.example/policy/deductions#QD-DED-002",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "over_cap_deduction"
+        ],
+        "remedy": "Refund the amount above the cap.",
+        "cap_rule": {
+          "type": "max_of",
+          "values": [
+            {
+              "type": "fixed",
+              "value": 100
+            },
+            {
+              "type": "percent_of_order_pay",
+              "value": 0.25
+            }
+          ]
+        }
+      },
+      {
+        "id": "QD-DED-003",
+        "code": "CANCEL",
+        "title": "Cancellation penalty cap",
+        "text": "A cancellation penalty may not exceed the greater of INR 50 or 10% of the order's total pay.",
+        "source_url": "https://quickdrop.example/policy/deductions#QD-DED-003",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "over_cap_deduction"
+        ],
+        "remedy": "Refund the amount above the cap.",
+        "cap_rule": {
+          "type": "max_of",
+          "values": [
+            {
+              "type": "fixed",
+              "value": 50
+            },
+            {
+              "type": "percent_of_order_pay",
+              "value": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "QD-DED-004",
+        "code": "LATE",
+        "title": "Restaurant delay protection",
+        "text": "No late-delivery penalty applies when the restaurant preparation time exceeds 20 minutes.",
+        "source_url": "https://quickdrop.example/policy/deductions#QD-DED-004",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "restaurant_delay_penalty"
+        ],
+        "remedy": "Reverse the late-delivery penalty.",
+        "cap_rule": null
+      },
+      {
+        "id": "QD-INC-001",
+        "code": "INC",
+        "title": "Incentive payment",
+        "text": "When a partner meets the published order target for an incentive, QuickDrop will pay the full incentive amount.",
+        "source_url": "https://quickdrop.example/policy/incentives#QD-INC-001",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "incentive_shortfall"
+        ],
+        "remedy": "Pay the unpaid incentive balance.",
+        "cap_rule": null
+      },
+      {
+        "id": "QD-EARN-001",
+        "code": "EARN",
+        "title": "Earnings for delivered orders",
+        "text": "Every order marked delivered must have at least one earning entry for the order.",
+        "source_url": "https://quickdrop.example/policy/earnings#QD-EARN-001",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "missing_earning"
+        ],
+        "remedy": "Add the missing earning entry and pay the order.",
+        "cap_rule": null
+      },
+      {
+        "id": "QD-REV-001",
+        "code": "*",
+        "title": "Itemised deductions and human review",
+        "text": "Every deduction must include an order reference, a published reason code, and an amount. Unclear deductions require human review before any claim is sent.",
+        "source_url": "https://quickdrop.example/policy/deductions#QD-REV-001",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "needs_review"
+        ],
+        "remedy": "Ask the platform to itemise the deduction.",
+        "cap_rule": null
+      }
+    ]
+  },
+  "reconciliation": {
+    "orders": [
+      {
+        "order_id": "QD-12001",
+        "status": "paid",
+        "expected_pay": 42.0,
+        "actual_pay": 42.0,
+        "delta": 0.0
+      },
+      {
+        "order_id": "QD-12002",
+        "status": "paid",
+        "expected_pay": 200.0,
+        "actual_pay": 200.0,
+        "delta": 0.0
+      },
+      {
+        "order_id": "QD-12003",
+        "status": "unpaid",
+        "expected_pay": 42.0,
+        "actual_pay": 0.0,
+        "delta": -42.0
+      },
+      {
+        "order_id": "QD-12004",
+        "status": "paid",
+        "expected_pay": 100.0,
+        "actual_pay": 100.0,
+        "delta": 0.0
+      },
+      {
+        "order_id": "QD-12005",
+        "status": "paid",
+        "expected_pay": 100.0,
+        "actual_pay": 100.0,
+        "delta": 0.0
+      }
+    ],
+    "summary": {
+      "orders": 5,
+      "total_expected": 484.0,
+      "total_actual": 442.0,
+      "total_delta": -42.0,
+      "status_counts": {
+        "paid": 4,
+        "unpaid": 1
+      }
+    }
+  },
+  "summary": {
+    "currency": "INR",
+    "total_potential": 217.0,
+    "total_ready": 217.0,
+    "total_needs_review": 0.0,
+    "claim_count": 4,
+    "ready_count": 4,
+    "needs_review_count": 0,
+    "review_item_count": 0,
+    "claim_type_counts": {
+      "duplicate_deduction": 1,
+      "incentive_shortfall": 1,
+      "missing_earning": 1,
+      "restaurant_delay_penalty": 1
+    },
+    "verification_passed": true
+  },
+  "claims": [
+    {
+      "claim_id": "C-001",
+      "claim_type": "duplicate_deduction",
+      "amount": 75.0,
+      "amount_display": "₹75.00",
+      "currency": "INR",
+      "status": "ready",
+      "confidence": 1.0,
+      "reason": "Order QD-12001 has 2 LATE deductions. The policy allows one deduction per order and reason; 1 duplicate charge is contestable.",
+      "order_ids": [
+        "QD-12001"
+      ],
+      "deduction_ids": [
+        "D-0001",
+        "D-0002"
+      ],
+      "earning_ids": [],
+      "incentive_ids": [],
+      "components": [
+        {
+          "label": "Duplicate LATE charge D-0002",
+          "amount": 75.0,
+          "amount_display": "₹75.00"
+        }
+      ],
+      "support_limit": 75.0,
+      "policy_clause_id": "QD-DED-001",
+      "policy_clause": {
+        "id": "QD-DED-001",
+        "code": "*",
+        "title": "One deduction per order and reason",
+        "text": "QuickDrop will not apply the same deduction code to the same order more than once. If a duplicate is applied, the later charge must be reversed.",
+        "source_url": "https://quickdrop.example/policy/deductions#QD-DED-001",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "duplicate_deduction"
+        ],
+        "remedy": "Reverse the duplicate charge.",
+        "cap_rule": null
+      },
+      "evidence": {
+        "timestamps": {
+          "D-0001": "2026-10-01T19:10:00+05:30",
+          "D-0002": "2026-10-01T19:14:00+05:30"
+        },
+        "arithmetic": "₹75.00 in duplicate LATE charges; one charge of ₹75.00 is allowed = ₹75.00 claim",
+        "kept_deduction_id": "D-0001",
+        "duplicate_deduction_ids": [
+          "D-0002"
+        ],
+        "deduction_code": "LATE",
+        "source_rows": {
+          "orders": {
+            "QD-12001": "orders.csv:2"
+          },
+          "deductions": {
+            "D-0001": "deductions.csv:2",
+            "D-0002": "deductions.csv:3"
+          },
+          "earnings": {},
+          "incentives": {}
+        },
+        "policy_clause_id": "QD-DED-001",
+        "currency": "INR",
+        "claim_event_at": "2026-10-01T19:10:00+05:30"
+      },
+      "verification": {
+        "passed": true,
+        "errors": []
+      }
+    },
+    {
+      "claim_id": "C-002",
+      "claim_type": "restaurant_delay_penalty",
+      "amount": 50.0,
+      "amount_display": "₹50.00",
+      "currency": "INR",
+      "status": "ready",
+      "confidence": 0.9,
+      "reason": "Order QD-12002 had 29 minutes of restaurant preparation, above the 20-minute protection threshold. The remaining late penalty of ₹50.00 is contestable.",
+      "order_ids": [
+        "QD-12002"
+      ],
+      "deduction_ids": [
+        "D-0003"
+      ],
+      "earning_ids": [],
+      "incentive_ids": [],
+      "components": [
+        {
+          "label": "Remaining late penalty D-0003",
+          "amount": 50.0,
+          "amount_display": "₹50.00"
+        }
+      ],
+      "support_limit": 50.0,
+      "policy_clause_id": "QD-DED-004",
+      "policy_clause": {
+        "id": "QD-DED-004",
+        "code": "LATE",
+        "title": "Restaurant delay protection",
+        "text": "No late-delivery penalty applies when the restaurant preparation time exceeds 20 minutes.",
+        "source_url": "https://quickdrop.example/policy/deductions#QD-DED-004",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "restaurant_delay_penalty"
+        ],
+        "remedy": "Reverse the late-delivery penalty.",
+        "cap_rule": null
+      },
+      "evidence": {
+        "timestamps": {
+          "accepted_at": "2026-10-02T18:00:00+05:30",
+          "picked_up_at": "2026-10-02T18:29:00+05:30",
+          "delivered_at": "2026-10-02T18:42:00+05:30",
+          "promised_delivery_at": "2026-10-02T18:40:00+05:30",
+          "penalty_applied_at": "2026-10-02T19:10:00+05:30"
+        },
+        "arithmetic": "₹50.00 remaining late penalty = ₹50.00 claim",
+        "restaurant_prep_minutes": 29,
+        "protection_threshold_minutes": 20,
+        "deduction_code": "LATE",
+        "source_rows": {
+          "orders": {
+            "QD-12002": "orders.csv:3"
+          },
+          "deductions": {
+            "D-0003": "deductions.csv:4"
+          },
+          "earnings": {},
+          "incentives": {}
+        },
+        "policy_clause_id": "QD-DED-004",
+        "currency": "INR",
+        "claim_event_at": "2026-10-02T19:10:00+05:30"
+      },
+      "verification": {
+        "passed": true,
+        "errors": []
+      }
+    },
+    {
+      "claim_id": "C-003",
+      "claim_type": "incentive_shortfall",
+      "amount": 50.0,
+      "amount_display": "₹50.00",
+      "currency": "INR",
+      "status": "ready",
+      "confidence": 1.0,
+      "reason": "Incentive INC-0001 (5-order streak) had a target of 5 orders and 5 were achieved, but the payout is ₹450.00 against a promised ₹500.00.",
+      "order_ids": [],
+      "deduction_ids": [],
+      "earning_ids": [],
+      "incentive_ids": [
+        "INC-0001"
+      ],
+      "components": [
+        {
+          "label": "Incentive INC-0001 shortfall",
+          "amount": 50.0,
+          "amount_display": "₹50.00"
+        }
+      ],
+      "support_limit": 50.0,
+      "policy_clause_id": "QD-INC-001",
+      "policy_clause": {
+        "id": "QD-INC-001",
+        "code": "INC",
+        "title": "Incentive payment",
+        "text": "When a partner meets the published order target for an incentive, QuickDrop will pay the full incentive amount.",
+        "source_url": "https://quickdrop.example/policy/incentives#QD-INC-001",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "incentive_shortfall"
+        ],
+        "remedy": "Pay the unpaid incentive balance.",
+        "cap_rule": null
+      },
+      "evidence": {
+        "arithmetic": "₹500.00 promised - ₹450.00 paid = ₹50.00 claim",
+        "target_orders": 5,
+        "achieved_orders": 5,
+        "amount_promised": 500.0,
+        "amount_paid": 450.0,
+        "qualifying_order_ids": [],
+        "source_rows": {
+          "orders": {},
+          "deductions": {},
+          "earnings": {},
+          "incentives": {
+            "INC-0001": "incentives.csv:2"
+          }
+        },
+        "policy_clause_id": "QD-INC-001",
+        "currency": "INR",
+        "claim_event_at": "2026-10-31T23:59:59+05:30"
+      },
+      "verification": {
+        "passed": true,
+        "errors": []
+      }
+    },
+    {
+      "claim_id": "C-004",
+      "claim_type": "missing_earning",
+      "amount": 42.0,
+      "amount_display": "₹42.00",
+      "currency": "INR",
+      "status": "ready",
+      "confidence": 0.95,
+      "reason": "Order QD-12003 is marked delivered but has no earning entry. The expected order pay is ₹42.00.",
+      "order_ids": [
+        "QD-12003"
+      ],
+      "deduction_ids": [],
+      "earning_ids": [],
+      "incentive_ids": [],
+      "components": [
+        {
+          "label": "Missing earnings for QD-12003",
+          "amount": 42.0,
+          "amount_display": "₹42.00"
+        }
+      ],
+      "support_limit": 42.0,
+      "policy_clause_id": "QD-EARN-001",
+      "policy_clause": {
+        "id": "QD-EARN-001",
+        "code": "EARN",
+        "title": "Earnings for delivered orders",
+        "text": "Every order marked delivered must have at least one earning entry for the order.",
+        "source_url": "https://quickdrop.example/policy/earnings#QD-EARN-001",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "jurisdiction": "IN-KA",
+        "applies_to": [
+          "missing_earning"
+        ],
+        "remedy": "Add the missing earning entry and pay the order.",
+        "cap_rule": null
+      },
+      "evidence": {
+        "timestamps": {
+          "accepted_at": "2026-10-03T18:00:00+05:30",
+          "delivered_at": "2026-10-03T18:25:00+05:30"
+        },
+        "arithmetic": "₹42.00 expected - ₹0.00 recorded = ₹42.00 claim",
+        "expected_pay": 42.0,
+        "actual_earnings": 0.0,
+        "order_status": "delivered",
+        "source_rows": {
+          "orders": {
+            "QD-12003": "orders.csv:4"
+          },
+          "deductions": {},
+          "earnings": {},
+          "incentives": {}
+        },
+        "policy_clause_id": "QD-EARN-001",
+        "currency": "INR",
+        "claim_event_at": "2026-10-03T18:25:00+05:30"
+      },
+      "verification": {
+        "passed": true,
+        "errors": []
+      }
+    }
+  ],
+  "review_items": [],
+  "verification": {
+    "passed": true,
+    "errors": []
+  },
+  "allocation_remaining": {
+    "D-0001": 75.0,
+    "D-0002": 0.0,
+    "D-0003": 0.0
+  },
+  "warnings": []
+}

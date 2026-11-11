@@ -1,0 +1,17 @@
+{
+  "fixture_id": "G03_restaurant_delay",
+  "description": "A late penalty on an order with 29 minutes of restaurant preparation; the policy protects the worker.",
+  "expected_claims": [
+    {
+      "type": "restaurant_delay_penalty",
+      "amount": 50.0,
+      "order_ids": [
+        "QD-3001"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 50.0,
+  "expected_review_items": 0
+}

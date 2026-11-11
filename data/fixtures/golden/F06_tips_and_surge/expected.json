@@ -1,0 +1,8 @@
+{
+  "fixture_id": "F06_tips_and_surge",
+  "description": "A \u20b9150 order made up of \u20b9100 base, \u20b930 surge, and \u20b920 tip, all paid.",
+  "expected_claims": [],
+  "expected_claim_count": 0,
+  "expected_total": 0,
+  "expected_review_items": 0
+}

@@ -1,0 +1,20 @@
+{
+  "flow": "upload PDF -> report -> evidence -> approve -> appeal -> PDF",
+  "input": "proof/G01_duplicate/statement.pdf",
+  "claim": "duplicate_deduction ₹75.00",
+  "source_quote": "Order QD-1001: 2 × LATE deductions at 19:10, 19:14, each ₹75.00.",
+  "policy_citation": "QD-DED-001",
+  "verifier": "PASS",
+  "pdf": "proof/ui/appeal.pdf",
+  "screenshots": [
+    "proof/ui/01-upload.png",
+    "proof/ui/02-file-selected.png",
+    "proof/ui/03-report.png",
+    "proof/ui/04-evidence.png",
+    "proof/ui/05-approved.png",
+    "proof/ui/06-appeal.png"
+  ],
+  "console_log": "proof/ui/console.log",
+  "page_errors": 0,
+  "console_errors": 0
+}

@@ -1,0 +1,25 @@
+{
+  "fixture_id": "G06_duplicate_and_over_cap",
+  "description": "Two \u20b9150 LATE deductions on a \u20b942 order: one duplicate \u20b9150 plus \u20b950 over the cap.",
+  "expected_claims": [
+    {
+      "type": "duplicate_deduction",
+      "amount": 150.0,
+      "order_ids": [
+        "QD-6001"
+      ],
+      "status": "ready"
+    },
+    {
+      "type": "over_cap_deduction",
+      "amount": 50.0,
+      "order_ids": [
+        "QD-6001"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 2,
+  "expected_total": 200.0,
+  "expected_review_items": 0
+}

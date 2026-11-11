@@ -1,0 +1,75 @@
+test_bad_provider_falls_back_to_template (test_appeal.AppealTests.test_bad_provider_falls_back_to_template) ... ok
+test_needs_review_claim_cannot_be_appealed (test_appeal.AppealTests.test_needs_review_claim_cannot_be_appealed) ... ok
+test_no_claims_raises (test_appeal.AppealTests.test_no_claims_raises) ... ok
+test_template_appeal_passes_verifier (test_appeal.AppealTests.test_template_appeal_passes_verifier) ... ok
+test_template_provider_is_default_without_key (test_appeal.AppealTests.test_template_provider_is_default_without_key) ... ok
+test_unsupported_amount_rejected (test_appeal.AppealTests.test_unsupported_amount_rejected) ... ok
+test_unsupported_citation_rejected (test_appeal.AppealTests.test_unsupported_citation_rejected) ... ok
+test_audit_csv_both_formats (test_cli.CLITests.test_audit_csv_both_formats) ... ok
+test_audit_json_only (test_cli.CLITests.test_audit_json_only) ... ok
+test_audit_text_pdf (test_cli.CLITests.test_audit_text_pdf) ... ok
+test_missing_bundle_returns_input_error (test_cli.CLITests.test_missing_bundle_returns_input_error) ... ok
+test_strict_fair_fixture_passes (test_cli.CLITests.test_strict_fair_fixture_passes) ... ok
+test_strict_unknown_code_fails (test_cli.CLITests.test_strict_unknown_code_fails) ... ok
+test_delay_and_over_cap_allocation (test_detectors.DetectorTests.test_delay_and_over_cap_allocation) ... ok
+test_duplicate (test_detectors.DetectorTests.test_duplicate) ... ok
+test_duplicate_and_over_cap_allocation (test_detectors.DetectorTests.test_duplicate_and_over_cap_allocation) ... ok
+test_fair_fixtures_have_no_claims (test_detectors.DetectorTests.test_fair_fixtures_have_no_claims) ... ok
+test_incentive_shortfall (test_detectors.DetectorTests.test_incentive_shortfall) ... ok
+test_missing_earning (test_detectors.DetectorTests.test_missing_earning) ... ok
+test_multiple_claim_types (test_detectors.DetectorTests.test_multiple_claim_types) ... ok
+test_over_cap_late (test_detectors.DetectorTests.test_over_cap_late) ... ok
+test_restaurant_delay (test_detectors.DetectorTests.test_restaurant_delay) ... ok
+test_all_golden_fixtures (test_golden.GoldenFixtureTests.test_all_golden_fixtures) ... ok
+test_duplicate_order_id_raises (test_ingestion.IngestionTests.test_duplicate_order_id_raises) ... ok
+test_missing_bundle_path_raises (test_ingestion.IngestionTests.test_missing_bundle_path_raises) ... ok
+test_missing_meta_raises (test_ingestion.IngestionTests.test_missing_meta_raises) ... ok
+test_pdf_without_meta_raises (test_ingestion.IngestionTests.test_pdf_without_meta_raises) ... ok
+test_read_bundle (test_ingestion.IngestionTests.test_read_bundle) ... ok
+test_read_zip_bundle (test_ingestion.IngestionTests.test_read_zip_bundle) ... ok
+test_text_pdf (test_ingestion.IngestionTests.test_text_pdf) ... ok
+test_appeal_pdf_contains_claim_and_citation (test_pdf_export.PdfExportTests.test_appeal_pdf_contains_claim_and_citation) ... ok
+test_high_risk_for_duplicate_case (test_risk.RiskTests.test_high_risk_for_duplicate_case) ... ok
+test_low_risk_for_clean_case (test_risk.RiskTests.test_low_risk_for_clean_case) ... ok
+test_medium_risk (test_risk.RiskTests.test_medium_risk) ... ok
+test_review_items_raise_priority (test_risk.RiskTests.test_review_items_raise_priority) ... ok
+test_format_inr (test_schema.SchemaTests.test_format_inr) ... ok
+test_parse_datetime_ist_and_z (test_schema.SchemaTests.test_parse_datetime_ist_and_z) ... ok
+test_parse_datetime_naive_gets_ist (test_schema.SchemaTests.test_parse_datetime_naive_gets_ist) ... ok
+test_parse_money_variants (test_schema.SchemaTests.test_parse_money_variants) ... ok
+test_rejects_fabricated_timestamp (test_verifier.VerifierTests.test_rejects_fabricated_timestamp) ... ok
+test_rejects_fake_deduction_id (test_verifier.VerifierTests.test_rejects_fake_deduction_id) ... ok
+test_rejects_fake_order_id (test_verifier.VerifierTests.test_rejects_fake_order_id) ... ok
+test_rejects_legal_advice (test_verifier.VerifierTests.test_rejects_legal_advice) ... ok
+test_rejects_missing_clause (test_verifier.VerifierTests.test_rejects_missing_clause) ... ok
+test_rejects_outcome_promise (test_verifier.VerifierTests.test_rejects_outcome_promise) ... ok
+test_rejects_real_brand_name (test_verifier.VerifierTests.test_rejects_real_brand_name) ... ok
+test_rejects_unknown_policy_clause (test_verifier.VerifierTests.test_rejects_unknown_policy_clause) ... ok
+test_rejects_unsupported_amount (test_verifier.VerifierTests.test_rejects_unsupported_amount) ... ok
+test_valid_claim_passes (test_verifier.VerifierTests.test_valid_claim_passes) ... ok
+test_verify_claims_marks_failure_as_needs_review (test_verifier.VerifierTests.test_verify_claims_marks_failure_as_needs_review) ... ok
+test_demo_case (test_webapp.WebAppTests.test_demo_case) ... [09/Nov/2026 19:40:46] "GET /api/demo HTTP/1.1" 200 -
+ok
+test_export_before_appeal_rejected (test_webapp.WebAppTests.test_export_before_appeal_rejected) ... [09/Nov/2026 19:40:46] "GET /api/demo HTTP/1.1" 200 -
+[09/Nov/2026 19:40:46] "POST /api/export HTTP/1.1" 400 -
+ok
+test_health (test_webapp.WebAppTests.test_health) ... [09/Nov/2026 19:40:47] "GET /api/health HTTP/1.1" 200 -
+ok
+test_pdf_upload_approve_appeal_export (test_webapp.WebAppTests.test_pdf_upload_approve_appeal_export) ... [09/Nov/2026 19:40:48] "POST /api/audit HTTP/1.1" 200 -
+[09/Nov/2026 19:40:48] "POST /api/approve HTTP/1.1" 200 -
+[09/Nov/2026 19:40:48] "POST /api/appeal HTTP/1.1" 200 -
+[09/Nov/2026 19:40:48] "POST /api/export HTTP/1.1" 200 -
+ok
+test_unknown_audit_rejected (test_webapp.WebAppTests.test_unknown_audit_rejected) ... [09/Nov/2026 19:40:48] "POST /api/approve HTTP/1.1" 404 -
+ok
+test_unknown_claim_rejected (test_webapp.WebAppTests.test_unknown_claim_rejected) ... [09/Nov/2026 19:40:49] "GET /api/demo HTTP/1.1" 200 -
+[09/Nov/2026 19:40:49] "POST /api/approve HTTP/1.1" 400 -
+ok
+test_zip_upload (test_webapp.WebAppTests.test_zip_upload) ... [09/Nov/2026 19:40:49] "POST /api/audit HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 5.260s
+
+OK
+exit_code=0

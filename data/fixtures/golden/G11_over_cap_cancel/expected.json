@@ -1,0 +1,17 @@
+{
+  "fixture_id": "G11_over_cap_cancel",
+  "description": "An \u20b980 cancellation penalty on a \u20b9100 order exceeds the \u20b950 cap.",
+  "expected_claims": [
+    {
+      "type": "over_cap_deduction",
+      "amount": 30.0,
+      "order_ids": [
+        "QD-11001"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 30.0,
+  "expected_review_items": 0
+}

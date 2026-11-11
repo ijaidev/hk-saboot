@@ -1,0 +1,8 @@
+{
+  "fixture_id": "F02_legit_late",
+  "description": "A \u20b950 late penalty on a \u20b9200 order is below the \u20b9100 cap and the prep time is normal.",
+  "expected_claims": [],
+  "expected_claim_count": 0,
+  "expected_total": 0,
+  "expected_review_items": 0
+}

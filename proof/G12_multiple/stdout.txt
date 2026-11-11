@@ -1,0 +1,6 @@
+Saboot audit: ST-G12_multiple (csv_bundle)
+Claims: 4 | Potential: ₹217.00 | Ready: ₹217.00 | Needs review: ₹0.00
+Review items: 0 | Verifier: PASS
+Wrote: proof/G12_multiple/audit.json
+Wrote: proof/G12_multiple/audit.md
+exit_code=0

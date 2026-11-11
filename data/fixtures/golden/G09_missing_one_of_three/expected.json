@@ -1,0 +1,17 @@
+{
+  "fixture_id": "G09_missing_one_of_three",
+  "description": "Three delivered orders; one has no earning line.",
+  "expected_claims": [
+    {
+      "type": "missing_earning",
+      "amount": 100.0,
+      "order_ids": [
+        "QD-9003"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 100.0,
+  "expected_review_items": 0
+}

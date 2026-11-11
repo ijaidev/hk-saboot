@@ -1,0 +1,8 @@
+{
+  "fixture_id": "F04_incentive_full",
+  "description": "A 5-order incentive was achieved and paid in full.",
+  "expected_claims": [],
+  "expected_claim_count": 0,
+  "expected_total": 0,
+  "expected_review_items": 0
+}

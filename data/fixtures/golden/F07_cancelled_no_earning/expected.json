@@ -1,0 +1,8 @@
+{
+  "fixture_id": "F07_cancelled_no_earning",
+  "description": "A cancelled order has no earning entry; this is not a missing-earning claim because it was not delivered.",
+  "expected_claims": [],
+  "expected_claim_count": 0,
+  "expected_total": 0,
+  "expected_review_items": 0
+}

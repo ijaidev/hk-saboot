@@ -1,0 +1,17 @@
+{
+  "fixture_id": "G05_missing_earning",
+  "description": "A delivered order has no earning entry at all.",
+  "expected_claims": [
+    {
+      "type": "missing_earning",
+      "amount": 42.0,
+      "order_ids": [
+        "QD-5001"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 42.0,
+  "expected_review_items": 0
+}

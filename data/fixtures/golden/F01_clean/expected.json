@@ -1,0 +1,8 @@
+{
+  "fixture_id": "F01_clean",
+  "description": "Three delivered orders, all paid in full, no deductions or incentives.",
+  "expected_claims": [],
+  "expected_claim_count": 0,
+  "expected_total": 0,
+  "expected_review_items": 0
+}

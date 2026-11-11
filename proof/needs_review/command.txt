@@ -1,0 +1,1 @@
+PYTHONPATH=src python3 -m saboot audit --bundle data/fixtures/edge/needs_review/statement --policy data/policy/quickdrop_policy.json --out proof/needs_review --format both --strict

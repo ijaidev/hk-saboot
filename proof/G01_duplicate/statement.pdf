@@ -1,0 +1,47 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 952 >>
+stream
+BT
+/F1 3.8 Tf
+20 588.2 Td
+5.5 TL
+(meta|statement_id=ST-G01_duplicate|platform=QuickDrop|worker_id=W-1042|period_start=2026-10-01T00:00:00+05:30|period_end=2026-10-31T23:59:59+05:30|currency=INR|jurisdiction=IN-KA) Tj
+T*
+(order|order_id=QD-1001|accepted_at=2026-10-01T18:00:00+05:30|picked_up_at=2026-10-01T18:12:00+05:30|delivered_at=2026-10-01T18:25:00+05:30|promised_delivery_at=2026-10-01T18:40:00+05:30|restaurant_prep_minutes=12|distance_km=3.0|status=delivered|base_pay=42.00|surge_pay=0.00|tip=0.00|total_pay=42.00) Tj
+T*
+(earning|earning_id=E-0001|order_id=QD-1001|earning_type=base|amount=42.00|description=Base pay) Tj
+T*
+(deduction|deduction_id=D-0001|order_id=QD-1001|deduction_code=LATE|description=Late delivery penalty|amount=75.00|applied_at=2026-10-01T19:10:00+05:30) Tj
+T*
+(deduction|deduction_id=D-0002|order_id=QD-1001|deduction_code=LATE|description=Late delivery penalty|amount=75.00|applied_at=2026-10-01T19:14:00+05:30) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000189 00000 n 
+0000000315 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1318
+%%EOF

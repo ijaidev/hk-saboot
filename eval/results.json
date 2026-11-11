@@ -1,0 +1,507 @@
+{
+  "aggregate": {
+    "fixtures_total": 20,
+    "fixtures_passed": 20,
+    "expected_claims": 17,
+    "actual_claims": 17,
+    "matched_claims": 17,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "verifier_pass": 20,
+    "claim_type_counts": {
+      "duplicate_deduction": 4,
+      "incentive_shortfall": 3,
+      "missing_earning": 3,
+      "over_cap_deduction": 4,
+      "restaurant_delay_penalty": 3
+    },
+    "generated_at": "2026-11-11T05:15:45.109919+00:00"
+  },
+  "fixtures": [
+    {
+      "fixture": "F01_clean",
+      "description": "Three delivered orders, all paid in full, no deductions or incentives.",
+      "expected_claims": 0,
+      "actual_claims": 0,
+      "matched": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 0,
+      "actual_total": 0.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "F02_legit_late",
+      "description": "A \u20b950 late penalty on a \u20b9200 order is below the \u20b9100 cap and the prep time is normal.",
+      "expected_claims": 0,
+      "actual_claims": 0,
+      "matched": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 0,
+      "actual_total": 0.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "F03_legit_cancel",
+      "description": "A \u20b930 cancellation penalty on a \u20b9100 order is below the \u20b950 cap.",
+      "expected_claims": 0,
+      "actual_claims": 0,
+      "matched": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 0,
+      "actual_total": 0.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "F04_incentive_full",
+      "description": "A 5-order incentive was achieved and paid in full.",
+      "expected_claims": 0,
+      "actual_claims": 0,
+      "matched": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 0,
+      "actual_total": 0.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "F05_valid_late_short_prep",
+      "description": "An \u20b980 late penalty on a \u20b9200 order with 10 minutes of restaurant prep is below cap and not protected.",
+      "expected_claims": 0,
+      "actual_claims": 0,
+      "matched": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 0,
+      "actual_total": 0.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "F06_tips_and_surge",
+      "description": "A \u20b9150 order made up of \u20b9100 base, \u20b930 surge, and \u20b920 tip, all paid.",
+      "expected_claims": 0,
+      "actual_claims": 0,
+      "matched": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 0,
+      "actual_total": 0.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "F07_cancelled_no_earning",
+      "description": "A cancelled order has no earning entry; this is not a missing-earning claim because it was not delivered.",
+      "expected_claims": 0,
+      "actual_claims": 0,
+      "matched": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 0,
+      "actual_total": 0.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "F08_boundary_cap",
+      "description": "A \u20b9100 late penalty on a \u20b9200 order is exactly at the cap and is not over-cap.",
+      "expected_claims": 0,
+      "actual_claims": 0,
+      "matched": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 0,
+      "actual_total": 0.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G01_duplicate",
+      "description": "Two identical LATE deductions on one order. One is legitimate; the second is a duplicate.",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 75.0,
+      "actual_total": 75.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "duplicate_deduction",
+          "amount": 75.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-1001"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G02_over_cap_late",
+      "description": "A \u20b9150 late penalty on a \u20b942 order exceeds the policy cap (greater of \u20b9100 or 25%).",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 50.0,
+      "actual_total": 50.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "over_cap_deduction",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-2001"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G03_restaurant_delay",
+      "description": "A late penalty on an order with 29 minutes of restaurant preparation; the policy protects the worker.",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 50.0,
+      "actual_total": 50.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "restaurant_delay_penalty",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-3001"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G04_incentive_shortfall",
+      "description": "A 5-order incentive was achieved but paid \u20b950 short.",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 50.0,
+      "actual_total": 50.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "incentive_shortfall",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": []
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G05_missing_earning",
+      "description": "A delivered order has no earning entry at all.",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 42.0,
+      "actual_total": 42.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "missing_earning",
+          "amount": 42.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-5001"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G06_duplicate_and_over_cap",
+      "description": "Two \u20b9150 LATE deductions on a \u20b942 order: one duplicate \u20b9150 plus \u20b950 over the cap.",
+      "expected_claims": 2,
+      "actual_claims": 2,
+      "matched": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 200.0,
+      "actual_total": 200.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "duplicate_deduction",
+          "amount": 150.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-6001"
+          ]
+        },
+        {
+          "type": "over_cap_deduction",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-6001"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G07_delay_and_over_cap",
+      "description": "A \u20b9150 late penalty on a 29-minute restaurant prep order: \u20b950 over cap plus \u20b9100 protected by the delay clause.",
+      "expected_claims": 2,
+      "actual_claims": 2,
+      "matched": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 150.0,
+      "actual_total": 150.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "over_cap_deduction",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-7001"
+          ]
+        },
+        {
+          "type": "restaurant_delay_penalty",
+          "amount": 100.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-7001"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G08_two_incentives",
+      "description": "Two incentives: one paid \u20b950 short, one paid in full.",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 50.0,
+      "actual_total": 50.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "incentive_shortfall",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": []
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G09_missing_one_of_three",
+      "description": "Three delivered orders; one has no earning line.",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 100.0,
+      "actual_total": 100.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "missing_earning",
+          "amount": 100.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-9003"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G10_duplicate_cancel",
+      "description": "Two identical CANCEL deductions on one order; one is a duplicate.",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 50.0,
+      "actual_total": 50.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "duplicate_deduction",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-10001"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G11_over_cap_cancel",
+      "description": "An \u20b980 cancellation penalty on a \u20b9100 order exceeds the \u20b950 cap.",
+      "expected_claims": 1,
+      "actual_claims": 1,
+      "matched": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 30.0,
+      "actual_total": 30.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "over_cap_deduction",
+          "amount": 30.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-11001"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    },
+    {
+      "fixture": "G12_multiple",
+      "description": "A mixed statement: duplicate, restaurant-delay, incentive shortfall, and missing earning.",
+      "expected_claims": 4,
+      "actual_claims": 4,
+      "matched": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "expected_total": 217.0,
+      "actual_total": 217.0,
+      "review_items": 0,
+      "verifier_passed": true,
+      "passed": true,
+      "actual": [
+        {
+          "type": "duplicate_deduction",
+          "amount": 75.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-12001"
+          ]
+        },
+        {
+          "type": "restaurant_delay_penalty",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-12002"
+          ]
+        },
+        {
+          "type": "incentive_shortfall",
+          "amount": 50.0,
+          "status": "ready",
+          "order_ids": []
+        },
+        {
+          "type": "missing_earning",
+          "amount": 42.0,
+          "status": "ready",
+          "order_ids": [
+            "QD-12003"
+          ]
+        }
+      ],
+      "false_positive_detail": [],
+      "false_negative_detail": []
+    }
+  ]
+}

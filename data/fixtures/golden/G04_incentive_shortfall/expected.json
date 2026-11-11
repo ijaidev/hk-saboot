@@ -1,0 +1,15 @@
+{
+  "fixture_id": "G04_incentive_shortfall",
+  "description": "A 5-order incentive was achieved but paid \u20b950 short.",
+  "expected_claims": [
+    {
+      "type": "incentive_shortfall",
+      "amount": 50.0,
+      "order_ids": [],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 50.0,
+  "expected_review_items": 0
+}

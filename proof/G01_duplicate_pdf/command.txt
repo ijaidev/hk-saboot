@@ -1,0 +1,1 @@
+PYTHONPATH=src python3 -m saboot audit --pdf proof/G01_duplicate/statement.pdf --policy data/policy/quickdrop_policy.json --out proof/G01_duplicate_pdf --format both

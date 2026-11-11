@@ -1,0 +1,6 @@
+Saboot audit: ST-F08_boundary_cap (csv_bundle)
+Claims: 0 | Potential: ₹0.00 | Ready: ₹0.00 | Needs review: ₹0.00
+Review items: 0 | Verifier: PASS
+Wrote: proof/F08_boundary_cap/audit.json
+Wrote: proof/F08_boundary_cap/audit.md
+exit_code=0

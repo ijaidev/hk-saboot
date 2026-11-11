@@ -1,0 +1,2 @@
+statement_id,platform,worker_id,period_start,period_end,currency,jurisdiction
+ST-F08_boundary_cap,QuickDrop,W-1042,2026-10-01T00:00:00+05:30,2026-10-31T23:59:59+05:30,INR,IN-KA

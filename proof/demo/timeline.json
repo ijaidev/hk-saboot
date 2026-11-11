@@ -1,0 +1,104 @@
+{
+  "scenes": [
+    {
+      "id": "intro",
+      "action": "none",
+      "min_ms": 9000,
+      "narration": "Saboot is an evidence-backed payout auditor for gig workers. It turns an opaque payout statement into claims a worker can understand, verify, and contest. This is a synthetic demo. QuickDrop is a fictional platform.",
+      "audio": "proof/demo/audio/01-intro.mp3",
+      "audio_seconds": 17.737,
+      "start": 0.0,
+      "end": 18.937,
+      "duration_ms": 18937
+    },
+    {
+      "id": "upload",
+      "action": "upload_and_audit",
+      "min_ms": 9000,
+      "narration": "The worker uploads a payout statement. This demo uses a text PDF. A CSV bundle works too. Everything runs locally, and the template appeal path needs no API key.",
+      "audio": "proof/demo/audio/02-upload.mp3",
+      "audio_seconds": 15.778,
+      "start": 18.937,
+      "end": 35.915,
+      "duration_ms": 16978
+    },
+    {
+      "id": "report",
+      "action": "none",
+      "min_ms": 10000,
+      "narration": "Saboot reconciles every order against the statement and the platform's published policy. It finds a seventy-five rupee duplicate deduction and flags the statement as high review priority. The report shows the disputed amount, the claim count, and the verifier status.",
+      "audio": "proof/demo/audio/03-report.mp3",
+      "audio_seconds": 20.428,
+      "start": 35.915,
+      "end": 57.543,
+      "duration_ms": 21628
+    },
+    {
+      "id": "claim",
+      "action": "scroll_claim",
+      "min_ms": 10000,
+      "narration": "Two identical late-delivery charges hit the same order, four minutes apart. The source quote shows both timestamps. The duplicate-deduction policy allows one charge per order and reason. The claim carries a confidence score of one point zero.",
+      "audio": "proof/demo/audio/04-claim.mp3",
+      "audio_seconds": 19.252,
+      "start": 57.543,
+      "end": 77.995,
+      "duration_ms": 20452
+    },
+    {
+      "id": "evidence",
+      "action": "evidence",
+      "min_ms": 10000,
+      "narration": "Open the evidence. Every rupee is traceable to the order, the deductions, the timestamps, and the arithmetic. The verifier passes, so the claim is ready for a human to review.",
+      "audio": "proof/demo/audio/05-evidence.mp3",
+      "audio_seconds": 12.983,
+      "start": 77.995,
+      "end": 92.178,
+      "duration_ms": 14183
+    },
+    {
+      "id": "approve",
+      "action": "approve",
+      "min_ms": 10000,
+      "narration": "A human reviews the evidence and approves the claim. Nothing is sent automatically. Saboot prepares a draft; the worker decides what to do with it.",
+      "audio": "proof/demo/audio/06-approve.mp3",
+      "audio_seconds": 11.102,
+      "start": 92.178,
+      "end": 104.48,
+      "duration_ms": 12302
+    },
+    {
+      "id": "appeal",
+      "action": "appeal",
+      "min_ms": 11000,
+      "narration": "Saboot drafts a request for review from the approved claims only. The template path needs no API key. The appeal verifier passes: every amount and citation is supported by the claim ledger.",
+      "audio": "proof/demo/audio/07-appeal.mp3",
+      "audio_seconds": 15.073,
+      "start": 104.48,
+      "end": 120.753,
+      "duration_ms": 16273
+    },
+    {
+      "id": "pdf",
+      "action": "pdf",
+      "min_ms": 12000,
+      "narration": "The PDF includes the appeal, the evidence appendix, the policy citations, the verifier result, and the human approval record. It is ready to attach to a platform grievance or a government escalation.",
+      "audio": "proof/demo/audio/08-pdf.mp3",
+      "audio_seconds": 16.797,
+      "start": 120.753,
+      "end": 138.749,
+      "duration_ms": 17997
+    },
+    {
+      "id": "close",
+      "action": "close",
+      "min_ms": 9000,
+      "narration": "Saboot makes algorithmic pay contestable. Not a promise of an outcome. A request for review, backed by evidence. Proof for every rupee.",
+      "audio": "proof/demo/audio/09-close.mp3",
+      "audio_seconds": 10.893,
+      "start": 138.749,
+      "end": 150.842,
+      "duration_ms": 12093
+    }
+  ],
+  "total_seconds": 150.842
+}

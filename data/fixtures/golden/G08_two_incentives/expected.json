@@ -1,0 +1,15 @@
+{
+  "fixture_id": "G08_two_incentives",
+  "description": "Two incentives: one paid \u20b950 short, one paid in full.",
+  "expected_claims": [
+    {
+      "type": "incentive_shortfall",
+      "amount": 50.0,
+      "order_ids": [],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 50.0,
+  "expected_review_items": 0
+}

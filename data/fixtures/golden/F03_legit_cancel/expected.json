@@ -1,0 +1,8 @@
+{
+  "fixture_id": "F03_legit_cancel",
+  "description": "A \u20b930 cancellation penalty on a \u20b9100 order is below the \u20b950 cap.",
+  "expected_claims": [],
+  "expected_claim_count": 0,
+  "expected_total": 0,
+  "expected_review_items": 0
+}

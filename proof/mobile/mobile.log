@@ -1,0 +1,7 @@
+
+Running 1 test using 1 worker
+
+[1/1] tests/ui/mobile.spec.js:13:1 › mobile upload and report at 390x844
+  1 passed (13.4s)
+
+exit_code=0

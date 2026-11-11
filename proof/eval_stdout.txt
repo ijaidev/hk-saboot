@@ -1,0 +1,4 @@
+20/20 fixtures passed | precision 1.00 | recall 1.00 | FP 0 | FN 0 | verifier 20/20
+Wrote /root/.t3/scratch/2026-11-09-okay-here-are-some-hackathons-618c6c60/programs/slay/saboot/eval/report.md
+Wrote /root/.t3/scratch/2026-11-09-okay-here-are-some-hackathons-618c6c60/programs/slay/saboot/eval/results.json
+exit_code=0

@@ -1,0 +1,17 @@
+{
+  "fixture_id": "G02_over_cap_late",
+  "description": "A \u20b9150 late penalty on a \u20b942 order exceeds the policy cap (greater of \u20b9100 or 25%).",
+  "expected_claims": [
+    {
+      "type": "over_cap_deduction",
+      "amount": 50.0,
+      "order_ids": [
+        "QD-2001"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 50.0,
+  "expected_review_items": 0
+}

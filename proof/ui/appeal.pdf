@@ -1,0 +1,184 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2262 >>
+stream
+BT
+/F1 9.5 Tf
+46 736.5 Td
+13 TL
+(SABOOT - REQUEST FOR REVIEW) Tj
+T*
+(Proof for every rupee.) Tj
+T*
+() Tj
+T*
+(Statement: ST-G01_duplicate) Tj
+T*
+(Worker: W-1042) Tj
+T*
+(Platform: QuickDrop \(fictional demo platform\)) Tj
+T*
+(Period: 2026-10-01 to 2026-10-31) Tj
+T*
+(Generated: 2026-11-09T18:41:30.666361+00:00) Tj
+T*
+(Draft provider: template) Tj
+T*
+(Total requested for review: Rs. 75.00) Tj
+T*
+(Verifier: PASS) Tj
+T*
+() Tj
+T*
+(APPEAL) Tj
+T*
+() Tj
+T*
+(Subject: Request for review - payout statement ST-G01_duplicate) Tj
+T*
+() Tj
+T*
+(To: QuickDrop Partner Support) Tj
+T*
+() Tj
+T*
+(Dear QuickDrop Partner Support,) Tj
+T*
+() Tj
+T*
+(I am requesting a review of my payout statement for 2026-10-01 to 2026-10-31. I compared the) Tj
+T*
+(deductions below with QuickDrop's published policy.) Tj
+T*
+() Tj
+T*
+(1. Duplicate Deduction - Rs. 75.00) Tj
+T*
+(Order\(s\): QD-1001) Tj
+T*
+(Deduction\(s\): D-0001, D-0002) Tj
+T*
+(Source: "Order QD-1001: 2 x LATE deductions at 19:10, 19:14, each Rs. 75.00.") Tj
+T*
+(Policy: QD-DED-001 - One deduction per order and reason) Tj
+T*
+(Source URL: https://quickdrop.example/policy/deductions#QD-DED-001) Tj
+T*
+(Why: Order QD-1001 has 2 LATE deductions. The policy allows one deduction per order and) Tj
+T*
+(reason; 1 duplicate charge is contestable.) Tj
+T*
+(Requested action: Reverse the duplicate charge.) Tj
+T*
+() Tj
+T*
+(Total requested for review: Rs. 75.00.) Tj
+T*
+() Tj
+T*
+(Please confirm receipt and respond within the timeline in your published grievance process.) Tj
+T*
+(I have kept the order and deduction references in the attached evidence pack.) Tj
+T*
+() Tj
+T*
+(This is a request for review, not legal advice. I have not sent this automatically.) Tj
+T*
+() Tj
+T*
+(Sincerely,) Tj
+T*
+(W-1042) Tj
+T*
+() Tj
+T*
+(EVIDENCE APPENDIX) Tj
+T*
+() Tj
+T*
+(C-001 - Duplicate Deduction - Rs. 75.00) Tj
+T*
+(Status: ready | Confidence: 1.00) Tj
+T*
+(Orders: QD-1001) Tj
+T*
+(Deductions: D-0001, D-0002) Tj
+T*
+(Source quote: "Order QD-1001: 2 x LATE deductions at 19:10, 19:14, each Rs. 75.00.") Tj
+T*
+(Arithmetic: Rs. 75.00 in duplicate LATE charges; one charge of Rs. 75.00 is allowed = Rs. 75.00 claim) Tj
+T*
+(Policy: QD-DED-001 - One deduction per order and reason) Tj
+T*
+(Source: https://quickdrop.example/policy/deductions#QD-DED-001) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 536 >>
+stream
+BT
+/F1 9.5 Tf
+46 736.5 Td
+13 TL
+(Effective: 2026-01-01 to 2026-12-31) Tj
+T*
+() Tj
+T*
+(POLICY CITATIONS) Tj
+T*
+() Tj
+T*
+(QD-DED-001 - One deduction per order and reason) Tj
+T*
+(https://quickdrop.example/policy/deductions#QD-DED-001) Tj
+T*
+(Effective 2026-01-01 to 2026-12-31) Tj
+T*
+() Tj
+T*
+(HUMAN APPROVAL) Tj
+T*
+() Tj
+T*
+(Approved at: 2026-11-09T18:41:26.345124+00:00) Tj
+T*
+(No appeal is sent automatically. This pack is a request for review, not legal advice.) Tj
+T*
+(Synthetic demo data; QuickDrop is a fictional platform.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000002637 00000 n 
+0000002763 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3350
+%%EOF

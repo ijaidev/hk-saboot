@@ -1,0 +1,5 @@
+earning_id,order_id,earning_type,amount,description
+E-0001,QD-12001,base,42.00,Base pay
+E-0002,QD-12002,base,200.00,Base pay
+E-0003,QD-12004,base,100.00,Base pay
+E-0004,QD-12005,base,100.00,Base pay

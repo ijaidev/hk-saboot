@@ -1,0 +1,1 @@
+PYTHONPATH=src python3 -m saboot audit --bundle data/fixtures/golden/F08_boundary_cap/statement --policy data/policy/quickdrop_policy.json --out proof/F08_boundary_cap --format both

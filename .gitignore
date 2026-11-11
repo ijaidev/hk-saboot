@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+*.db
+.DS_Store
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+proof/demo/audio/
+proof/demo/raw/
+proof/demo/voiceover.wav
+proof/demo/voiceover_norm.wav
+proof/demo/raw_video_path.txt

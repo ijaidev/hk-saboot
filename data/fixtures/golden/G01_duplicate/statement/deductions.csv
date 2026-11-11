@@ -1,0 +1,3 @@
+deduction_id,order_id,deduction_code,description,amount,applied_at
+D-0001,QD-1001,LATE,Late delivery penalty,75.00,2026-10-01T19:10:00+05:30
+D-0002,QD-1001,LATE,Late delivery penalty,75.00,2026-10-01T19:14:00+05:30

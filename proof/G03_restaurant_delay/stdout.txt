@@ -1,0 +1,6 @@
+Saboot audit: ST-G03_restaurant_delay (csv_bundle)
+Claims: 1 | Potential: ₹50.00 | Ready: ₹50.00 | Needs review: ₹0.00
+Review items: 0 | Verifier: PASS
+Wrote: proof/G03_restaurant_delay/audit.json
+Wrote: proof/G03_restaurant_delay/audit.md
+exit_code=0

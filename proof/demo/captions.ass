@@ -1,0 +1,45 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,DejaVu Sans,28,&H00FFFFFF,&H000000FF,&H00000000,&HA0000000,0,0,0,0,100,100,0,0,3,1.4,0,2,90,90,38,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.14,0:00:04.06,Default,,0,0,0,,Saboot is an evidence-backed payout auditor for gig workers.
+Dialogue: 0,0:00:04.76,0:00:08.10,Default,,0,0,0,,It turns an opaque payout statement into claims a
+Dialogue: 0,0:00:08.16,0:00:13.20,Default,,0,0,0,,worker can understand, verify, and contest. This is a
+Dialogue: 0,0:00:13.26,0:00:17.24,Default,,0,0,0,,synthetic demo. QuickDrop is a fictional platform.
+Dialogue: 0,0:00:19.08,0:00:23.30,Default,,0,0,0,,The worker uploads a payout statement. This demo uses
+Dialogue: 0,0:00:23.36,0:00:29.48,Default,,0,0,0,,a text PDF. A CSV bundle works too. Everything
+Dialogue: 0,0:00:29.58,0:00:34.24,Default,,0,0,0,,runs locally, and the template appeal path needs no API key.
+Dialogue: 0,0:00:36.04,0:00:39.84,Default,,0,0,0,,Saboot reconciles every order against the statement and the
+Dialogue: 0,0:00:39.86,0:00:44.46,Default,,0,0,0,,platform's published policy. It finds a seventy-five rupee
+Dialogue: 0,0:00:44.60,0:00:48.42,Default,,0,0,0,,duplicate deduction and flags the statement as high review
+Dialogue: 0,0:00:48.54,0:00:53.40,Default,,0,0,0,,priority. The report shows the disputed amount, the claim
+Dialogue: 0,0:00:53.54,0:00:55.88,Default,,0,0,0,,count, and the verifier status.
+Dialogue: 0,0:00:57.68,0:01:01.94,Default,,0,0,0,,Two identical late-delivery charges hit the same order, four
+Dialogue: 0,0:01:02.04,0:01:07.26,Default,,0,0,0,,minutes apart. The source quote shows both timestamps. The
+Dialogue: 0,0:01:07.30,0:01:11.94,Default,,0,0,0,,duplicate-deduction policy allows one charge per order and\Nreason.
+Dialogue: 0,0:01:12.76,0:01:16.32,Default,,0,0,0,,The claim carries a confidence score of one point zero.
+Dialogue: 0,0:01:18.12,0:01:21.30,Default,,0,0,0,,Open the evidence. Every rupee is traceable to the
+Dialogue: 0,0:01:21.48,0:01:26.30,Default,,0,0,0,,order, the deductions, the timestamps, and the arithmetic. The
+Dialogue: 0,0:01:26.34,0:01:30.48,Default,,0,0,0,,verifier passes, so the claim is ready for a human to review.
+Dialogue: 0,0:01:32.28,0:01:35.38,Default,,0,0,0,,A human reviews the evidence and approves the claim.
+Dialogue: 0,0:01:36.22,0:01:40.96,Default,,0,0,0,,Nothing is sent automatically. Saboot prepares a draft; the
+Dialogue: 0,0:01:41.00,0:01:42.84,Default,,0,0,0,,worker decides what to do with it.
+Dialogue: 0,0:01:44.60,0:01:47.78,Default,,0,0,0,,Saboot drafts a request for review from the approved
+Dialogue: 0,0:01:47.88,0:01:52.62,Default,,0,0,0,,claims only. The template path needs no API key.
+Dialogue: 0,0:01:53.12,0:01:57.40,Default,,0,0,0,,The appeal verifier passes: every amount and citation is
+Dialogue: 0,0:01:57.46,0:01:59.12,Default,,0,0,0,,supported by the claim ledger.
+Dialogue: 0,0:02:00.89,0:02:05.75,Default,,0,0,0,,The PDF includes the appeal, the evidence appendix, the
+Dialogue: 0,0:02:05.79,0:02:10.63,Default,,0,0,0,,policy citations, the verifier result, and the human approval
+Dialogue: 0,0:02:10.75,0:02:14.41,Default,,0,0,0,,record. It is ready to attach to a platform
+Dialogue: 0,0:02:14.51,0:02:17.09,Default,,0,0,0,,grievance or a government escalation.
+Dialogue: 0,0:02:18.87,0:02:23.19,Default,,0,0,0,,Saboot makes algorithmic pay contestable. Not a promise of
+Dialogue: 0,0:02:23.23,0:02:27.19,Default,,0,0,0,,an outcome. A request for review, backed by evidence.
+Dialogue: 0,0:02:27.87,0:02:29.21,Default,,0,0,0,,Proof for every rupee.

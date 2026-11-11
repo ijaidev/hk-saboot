@@ -1,0 +1,10 @@
+{
+  "viewport": "390x844",
+  "screens": [
+    "proof/mobile/01-upload-390x844.png",
+    "proof/mobile/02-report-390x844.png"
+  ],
+  "upload_horizontal_overflow_px": 0,
+  "report_horizontal_overflow_px": 0,
+  "claim": "₹75.00"
+}

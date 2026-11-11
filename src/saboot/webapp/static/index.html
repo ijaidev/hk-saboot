@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saboot — Proof for every rupee</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span class="brand-word">SABOOT</span>
+      <span class="brand-tag">Proof for every rupee.</span>
+    </div>
+    <div class="topbar-meta">
+      <span class="status-dot" aria-hidden="true"></span>
+      Local audit · deterministic core
+    </div>
+  </header>
+
+  <main class="shell">
+    <section id="upload-view" class="view">
+      <div class="hero">
+        <p class="eyebrow">Payout audit</p>
+        <h1>Find out what your payout is missing.</h1>
+        <p class="hero-copy">
+          Upload a payout statement. Saboot checks every order, deduction, and policy
+          clause, then proves what it finds — with a source quote, a citation, and a
+          confidence score.
+        </p>
+        <div class="hero-notes">
+          <span>No auto-send</span>
+          <span>Evidence-bound</span>
+          <span>Runs locally</span>
+        </div>
+      </div>
+
+      <div class="upload-grid">
+        <div class="upload-card">
+          <label id="dropzone" class="dropzone" for="file-input" tabindex="0">
+            <span class="drop-icon" aria-hidden="true">↥</span>
+            <span class="drop-title">Drop a statement here</span>
+            <span class="drop-sub">or choose a file</span>
+            <span class="drop-hint">Text PDF or CSV bundle (.zip) · max 10 MB</span>
+            <input id="file-input" type="file" accept=".pdf,.zip" hidden>
+          </label>
+          <div id="file-meta" class="file-meta" aria-live="polite">No file selected.</div>
+          <div class="upload-actions">
+            <button id="audit-button" class="btn btn-primary" disabled>Audit statement</button>
+            <button id="demo-button" class="btn btn-ghost" type="button">Load sample case</button>
+          </div>
+          <p id="upload-error" class="form-error" role="alert" hidden></p>
+          <p class="privacy-note">
+            Synthetic QuickDrop demo data. This is a request-for-review workflow,
+            not legal advice. Nothing is sent automatically.
+          </p>
+        </div>
+
+        <aside class="how-card">
+          <p class="eyebrow">What happens next</p>
+          <ol class="how-list">
+            <li><span class="how-num">01</span><div><strong>Read</strong><p>Orders, earnings, deductions, and incentives are normalized.</p></div></li>
+            <li><span class="how-num">02</span><div><strong>Prove</strong><p>Five detectors reconcile the math and bind each claim to policy.</p></div></li>
+            <li><span class="how-num">03</span><div><strong>Review</strong><p>You inspect the evidence, approve claims, and export a draft.</p></div></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section id="processing-view" class="view" hidden>
+      <div class="processing-card" aria-live="polite">
+        <div class="spinner" aria-hidden="true"></div>
+        <p class="eyebrow">Auditing statement</p>
+        <h2 id="processing-title">Reading the statement…</h2>
+        <ul class="processing-steps">
+          <li data-step="read">Extract and normalize records</li>
+          <li data-step="reconcile">Reconcile expected pay against earnings</li>
+          <li data-step="detect">Run the five claim detectors</li>
+          <li data-step="verify">Verify every amount, ID, date, and citation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="report-view" class="view" hidden>
+      <div class="report-head">
+        <div>
+          <p class="eyebrow">Audit report</p>
+          <h1 id="statement-title" class="report-title">Statement</h1>
+          <p id="statement-meta" class="report-meta"></p>
+        </div>
+        <div id="risk-panel" class="risk-panel" data-testid="risk-panel">
+          <div id="risk-gauge" class="risk-gauge" style="--score: 0">
+            <span id="risk-score" data-testid="risk-score">0</span>
+            <small>risk</small>
+          </div>
+          <div class="risk-copy">
+            <span id="risk-label" class="risk-label" data-testid="risk-label">Review priority</span>
+            <p id="risk-description">Estimates how much of this statement needs review.</p>
+            <p id="risk-factors" class="risk-factors"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card highlight">
+          <span class="summary-label">Potential disputed</span>
+          <strong id="summary-disputed" data-testid="summary-disputed">₹0.00</strong>
+          <span class="summary-sub">across detected claims</span>
+        </div>
+        <div class="summary-card">
+          <span class="summary-label">Claims</span>
+          <strong id="summary-claims">0</strong>
+          <span class="summary-sub">ready for review</span>
+        </div>
+        <div class="summary-card">
+          <span class="summary-label">Verifier</span>
+          <strong id="summary-verifier">PASS</strong>
+          <span class="summary-sub">amounts, IDs, dates, citations</span>
+        </div>
+        <div class="summary-card">
+          <span class="summary-label">Needs review</span>
+          <strong id="summary-review">0</strong>
+          <span class="summary-sub">items not turned into claims</span>
+        </div>
+      </div>
+
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Evidence</p>
+          <h2>Claims</h2>
+        </div>
+        <p class="section-note">Select the claims you want to include in the appeal.</p>
+      </div>
+      <div id="claims-list" class="claims-list" data-testid="claims-list"></div>
+
+      <div id="review-section" class="review-section" hidden>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Human review</p>
+            <h2>Review items</h2>
+          </div>
+          <p class="section-note">These are not claims. They stay out of the appeal until a human resolves them.</p>
+        </div>
+        <div id="review-list" class="review-list" data-testid="review-list"></div>
+      </div>
+
+      <div class="approval-bar" data-testid="approval-bar">
+        <div class="approval-copy">
+          <label class="check-row">
+            <input id="review-check" type="checkbox" data-testid="review-check">
+            <span>I reviewed the evidence and policy citations for the selected claims.</span>
+          </label>
+          <p class="approval-note">No auto-send. Saboot prepares a draft; you decide what to do with it.</p>
+          <p id="approval-status" class="approval-status" aria-live="polite"></p>
+        </div>
+        <div class="approval-actions">
+          <button id="approve-button" class="btn btn-primary" data-testid="approve-button" disabled>Approve selected claims</button>
+          <button id="appeal-button" class="btn btn-dark" data-testid="appeal-button" disabled>Generate appeal</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="appeal-view" class="view" hidden>
+      <div class="appeal-head">
+        <div>
+          <p class="eyebrow">Appeal draft</p>
+          <h1 class="report-title">Request for review</h1>
+          <p id="appeal-meta" class="report-meta"></p>
+        </div>
+        <span id="appeal-verifier" class="verifier-badge" data-testid="appeal-verifier">Verifier PASS</span>
+      </div>
+
+      <div class="appeal-layout">
+        <article class="appeal-paper">
+          <p id="appeal-subject" class="appeal-subject" data-testid="appeal-subject"></p>
+          <pre id="appeal-body" class="appeal-body" data-testid="appeal-body"></pre>
+        </article>
+        <aside class="appeal-side">
+          <div class="side-card">
+            <p class="eyebrow">Citations</p>
+            <ul id="appeal-citations" class="citation-list"></ul>
+          </div>
+          <div class="side-card">
+            <p class="eyebrow">Export</p>
+            <p class="side-copy">Download the appeal and evidence pack as a PDF. Nothing is sent automatically.</p>
+            <button id="download-button" class="btn btn-primary" data-testid="download-button">Download PDF</button>
+            <button id="restart-button" class="btn btn-ghost" type="button">Audit another statement</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <footer class="footer">
+    <span>Saboot · local checkpoint build</span>
+    <span>Synthetic demo data · fictional policy · not legal advice</span>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

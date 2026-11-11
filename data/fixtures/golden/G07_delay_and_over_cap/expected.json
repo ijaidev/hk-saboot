@@ -1,0 +1,25 @@
+{
+  "fixture_id": "G07_delay_and_over_cap",
+  "description": "A \u20b9150 late penalty on a 29-minute restaurant prep order: \u20b950 over cap plus \u20b9100 protected by the delay clause.",
+  "expected_claims": [
+    {
+      "type": "over_cap_deduction",
+      "amount": 50.0,
+      "order_ids": [
+        "QD-7001"
+      ],
+      "status": "ready"
+    },
+    {
+      "type": "restaurant_delay_penalty",
+      "amount": 100.0,
+      "order_ids": [
+        "QD-7001"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 2,
+  "expected_total": 150.0,
+  "expected_review_items": 0
+}

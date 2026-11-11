@@ -1,0 +1,8 @@
+Saboot local UI: http://127.0.0.1:8765
+Template-only appeal path is available with no API key.
+[09/Nov/2026 19:41:50] "GET /api/health HTTP/1.1" 200 -
+[09/Nov/2026 19:41:59] "GET / HTTP/1.1" 200 -
+[09/Nov/2026 19:42:00] "GET /static/styles.css HTTP/1.1" 200 -
+[09/Nov/2026 19:42:00] "GET /static/app.js HTTP/1.1" 200 -
+[09/Nov/2026 19:42:01] "GET /favicon.ico HTTP/1.1" 204 -
+[09/Nov/2026 19:42:05] "POST /api/audit HTTP/1.1" 200 -

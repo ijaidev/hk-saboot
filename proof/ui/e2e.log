@@ -1,0 +1,7 @@
+
+Running 1 test using 1 worker
+
+[1/1] tests/ui/saboot.spec.js:31:1 › upload PDF -> ₹75 claim -> evidence -> approve -> appeal -> verifier -> PDF
+  1 passed (35.2s)
+
+exit_code=0

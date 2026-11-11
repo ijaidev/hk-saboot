@@ -1,0 +1,56 @@
+[
+  {
+    "id": "intro",
+    "action": "none",
+    "min_ms": 9000,
+    "narration": "Saboot is an evidence-backed payout auditor for gig workers. It turns an opaque payout statement into claims a worker can understand, verify, and contest. This is a synthetic demo. QuickDrop is a fictional platform."
+  },
+  {
+    "id": "upload",
+    "action": "upload_and_audit",
+    "min_ms": 9000,
+    "narration": "The worker uploads a payout statement. This demo uses a text PDF. A CSV bundle works too. Everything runs locally, and the template appeal path needs no API key."
+  },
+  {
+    "id": "report",
+    "action": "none",
+    "min_ms": 10000,
+    "narration": "Saboot reconciles every order against the statement and the platform's published policy. It finds a seventy-five rupee duplicate deduction and flags the statement as high review priority. The report shows the disputed amount, the claim count, and the verifier status."
+  },
+  {
+    "id": "claim",
+    "action": "scroll_claim",
+    "min_ms": 10000,
+    "narration": "Two identical late-delivery charges hit the same order, four minutes apart. The source quote shows both timestamps. The duplicate-deduction policy allows one charge per order and reason. The claim carries a confidence score of one point zero."
+  },
+  {
+    "id": "evidence",
+    "action": "evidence",
+    "min_ms": 10000,
+    "narration": "Open the evidence. Every rupee is traceable to the order, the deductions, the timestamps, and the arithmetic. The verifier passes, so the claim is ready for a human to review."
+  },
+  {
+    "id": "approve",
+    "action": "approve",
+    "min_ms": 10000,
+    "narration": "A human reviews the evidence and approves the claim. Nothing is sent automatically. Saboot prepares a draft; the worker decides what to do with it."
+  },
+  {
+    "id": "appeal",
+    "action": "appeal",
+    "min_ms": 11000,
+    "narration": "Saboot drafts a request for review from the approved claims only. The template path needs no API key. The appeal verifier passes: every amount and citation is supported by the claim ledger."
+  },
+  {
+    "id": "pdf",
+    "action": "pdf",
+    "min_ms": 12000,
+    "narration": "The PDF includes the appeal, the evidence appendix, the policy citations, the verifier result, and the human approval record. It is ready to attach to a platform grievance or a government escalation."
+  },
+  {
+    "id": "close",
+    "action": "close",
+    "min_ms": 9000,
+    "narration": "Saboot makes algorithmic pay contestable. Not a promise of an outcome. A request for review, backed by evidence. Proof for every rupee."
+  }
+]

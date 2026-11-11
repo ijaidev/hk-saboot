@@ -1,0 +1,39 @@
+{
+  "fixture_id": "G12_multiple",
+  "description": "A mixed statement: duplicate, restaurant-delay, incentive shortfall, and missing earning.",
+  "expected_claims": [
+    {
+      "type": "duplicate_deduction",
+      "amount": 75.0,
+      "order_ids": [
+        "QD-12001"
+      ],
+      "status": "ready"
+    },
+    {
+      "type": "restaurant_delay_penalty",
+      "amount": 50.0,
+      "order_ids": [
+        "QD-12002"
+      ],
+      "status": "ready"
+    },
+    {
+      "type": "incentive_shortfall",
+      "amount": 50.0,
+      "order_ids": [],
+      "status": "ready"
+    },
+    {
+      "type": "missing_earning",
+      "amount": 42.0,
+      "order_ids": [
+        "QD-12003"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 4,
+  "expected_total": 217.0,
+  "expected_review_items": 0
+}

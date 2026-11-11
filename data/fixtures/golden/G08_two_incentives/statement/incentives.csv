@@ -1,0 +1,3 @@
+incentive_id,name,target_orders,target_amount,achieved_orders,amount_promised,amount_paid,qualifying_order_ids
+INC-0001,5-order streak,5,0.00,5,500.00,450.00,
+INC-0002,Weekend bonus,5,0.00,5,200.00,200.00,

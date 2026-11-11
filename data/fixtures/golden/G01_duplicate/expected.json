@@ -1,0 +1,17 @@
+{
+  "fixture_id": "G01_duplicate",
+  "description": "Two identical LATE deductions on one order. One is legitimate; the second is a duplicate.",
+  "expected_claims": [
+    {
+      "type": "duplicate_deduction",
+      "amount": 75.0,
+      "order_ids": [
+        "QD-1001"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 75.0,
+  "expected_review_items": 0
+}

@@ -1,0 +1,17 @@
+{
+  "fixture_id": "G10_duplicate_cancel",
+  "description": "Two identical CANCEL deductions on one order; one is a duplicate.",
+  "expected_claims": [
+    {
+      "type": "duplicate_deduction",
+      "amount": 50.0,
+      "order_ids": [
+        "QD-10001"
+      ],
+      "status": "ready"
+    }
+  ],
+  "expected_claim_count": 1,
+  "expected_total": 50.0,
+  "expected_review_items": 0
+}

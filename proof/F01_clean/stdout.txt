@@ -1,0 +1,6 @@
+Saboot audit: ST-F01_clean (csv_bundle)
+Claims: 0 | Potential: ₹0.00 | Ready: ₹0.00 | Needs review: ₹0.00
+Review items: 0 | Verifier: PASS
+Wrote: proof/F01_clean/audit.json
+Wrote: proof/F01_clean/audit.md
+exit_code=0

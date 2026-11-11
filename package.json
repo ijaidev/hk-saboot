@@ -1,0 +1,14 @@
+{
+  "name": "saboot-ui-e2e",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright E2E for the local Saboot UI",
+  "scripts": {
+    "e2e": "playwright test",
+    "e2e:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0"
+  },
+  "license": "MIT"
+}
